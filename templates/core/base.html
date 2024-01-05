@@ -4,12 +4,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> {% block title %}Multi Vendor E-Commerce Website{% endblock title %} </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- boot starpe -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        .navbar-brand{
+            display: contents;
+        }
+    </style>
 
 </head>
 <body>
@@ -18,9 +28,8 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="{% url 'core:home' %}">
-                <img src="https://2.bp.blogspot.com/-mkVne3V2tzY/Xfo99c80KUI/AAAAAAAAD_c/9EbC4qu-fYAeVjLi3ONzRZ-osIW4H3qBACK4BGAYYCw/s1600/Vijay%2BThapa%2BLogo%2BHD.png" width="112" height="28">
+                    <i class="fa fa-home w3-xlarge"></i>
                 </a>
-
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>

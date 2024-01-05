@@ -34,10 +34,10 @@
                                     <a href="{% url 'product:product' item.product.category.slug item.product.slug %}">{{item.product.title}}</a>
                                 </td>
                                 <td>
-                                    ${{item.quantity}}
+                                    <b>${{item.quantity}}</b>
 
-                                    <a href="?change_quantity={{ item.id }}&quantity=-1">-</a>
-                                    <a href="?change_quantity={{ item.id }}&quantity=1">+</a>
+                                    <a href="?change_quantity={{ item.id }}&quantity=-1"><button style="width: 20px;background-color:lightgray; border-radius:50%;"><b>-</b></button></a>
+                                    <a href="?change_quantity={{ item.id }}&quantity=1"><button style="width: 20px; background-color:lightgray; border-radius:50%;"><b>+</b></button></a>
 
                                 </td>
 
@@ -168,7 +168,7 @@
 
             <div class="field">
                 <div class="control">
-                    <button class="button is-dark mt-4 is-uppercase">Checkout</button>
+                    <button class="button is-dark mt-4 is-uppercase" onclick="alert('Payment done Succesfully')">Checkout</button>
                 </div>
             </div>
         </form>

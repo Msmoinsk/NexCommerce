@@ -5,8 +5,8 @@
 {% block content %}
 
     {% if product.image %}
-        <figure class="image is-4by3 mb-6">
-            <img src="{{product.image.url}}" alt="{{product.title}}">
+        <figure class="image is-16by9 mb-6">
+            <img src="{{product.image.url}}" alt="{{product.title}}" style="display: block;margin-left: auto;margin-right: auto;width: 40%;">
         </figure>
     {% endif %}
 
